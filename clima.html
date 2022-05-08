@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador del clima</title>
+    <link rel="stylesheet" href="css/clima.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="assets/img/logo1.png">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo">xbox</div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="servicios.html">SERVICIOS</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+				<li><a href="clima.html">CLIMA</a></li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+	</header>
+    <section class="weather-content">
+        <h1>Buscador del clima</h1>
+        <div class="result">
+            <p>Agrege cuidad y pais</p>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="escribe tu ciudad...">
+            <select name="" id="country">
+                <option disabled selected value="">Seleccione su país</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="CO">Colombia</option>
+                <option value="CA">Canada</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+                <option value="VE">Venezuela</option>
+            </select>
+            <input type="submit" name="" id="" value="Obtener clima">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="l-footer">
+         <h1><img src="https://i.postimg.cc/y62wcLBq/logo.png" alt=""></h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p> 
+        </div>
+        <ul class="r-footer">
+            <li>
+             <h2>Social</h2>
+                <ul class="box">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Pinterest</a></li>
+                  <li><a href="#">Dribbble</a></li>
+                </ul>
+            </li>
+           <li class="features">
+               <h2>Information</h2>
+                <ul class="box h-box">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Tickets</a></li>
+                  <li><a href="#">Certifications</a></li>
+                  <li><a href="#">Customer Service</a></li>
+                </ul>
+            </li>
+            <li>
+              <h2>Legal</h2>
+                <ul class="box">
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li><a href="#">Terms of Use</a></li>
+                   <li><a href="#">Contract</a></li>
+                </ul>
+            </li>
+        </ul>
+            <div class="b-footer">
+             <p>All rights reserved by ©CompanyName 2022 </p>
+            </div>
+    </footer>
+        <script src="js/jquery-3.1.0.min.js"></script>
+	    <script src="js/main.js"></script>
+        <script src="js/clima.js" defer></script>
+</body>
+</html>

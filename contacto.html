@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/img/logo1.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+	<header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo">xbox</div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="servicios.html">SERVICIOS</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+				<li><a href="clima.html">CLIMA</a></li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+	</header>
+
+<section>
+    <div class="contact-container">
+        <div class="form-container">
+        <div class="contenedor">
+        <form action="" method="" class="form-contacto">
+            <div class="col">                
+                <div>                
+                    <h1>Formulario de Registo</h1>
+                </div>
+                <div>
+                    <label for="nombre">Nombre de usuario:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre Completo">
+                    <span id="ayudaNombre"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="user@gmail.com">
+                    <span id="ayudaEmail"></span>
+                </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" required name="asunto">
+                    <span id="ayudaClave"></span>
+                </div>
+                <div class="divSelect" id="paises">                 
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="confirmacion" id="confirmacion">
+                    <label for="confirmacion">Enviame un email de confirmacion</label>
+                    <br /> <br /> 
+                </div>
+                <div class="radio">
+                    <div>
+                        <input type="radio" name="suscripcion" id="Suscribirme" value="Suscribirme" checked>
+                        <label for="Suscribirme">Suscribirme a las novedades sobre xbox</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="suscripcion" id="NoSuscribirme" value="NoSuscribirme" checked>
+                        <label for="NoSuscribirme">Xbox es demasiado genial para tí xd</label>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <label for="comentario">Comentario:</label>
+                    <textarea name="" id="" cols="30" rows="10" id="comentario" placeholder="Escribe tu comentario"></textarea>                    
+                </div>
+            </div>
+            <div id="map">
+
+            </div>
+            <div class="botones">
+                <input type="submit" value="enviar" class="btn btn2" onclick="mostrarConsola()">
+                <input type="reset" value="cancelar"class="btn btn2">
+            </div>
+
+        </form>
+    </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15195.125527794457!2d-63.14430479999999!3d-17.8019688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbo!4v1651623957554!5m2!1sen!2sbo" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="l-footer">
+         <h1><img src="https://i.postimg.cc/y62wcLBq/logo.png" alt=""></h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p> 
+        </div>
+        <ul class="r-footer">
+            <li>
+             <h2>Social</h2>
+                <ul class="box">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Pinterest</a></li>
+                  <li><a href="#">Dribbble</a></li>
+                </ul>
+            </li>
+           <li class="features">
+               <h2>Information</h2>
+                <ul class="box h-box">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Tickets</a></li>
+                  <li><a href="#">Certifications</a></li>
+                  <li><a href="#">Customer Service</a></li>
+                </ul>
+            </li>
+            <li>
+              <h2>Legal</h2>
+                <ul class="box">
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li><a href="#">Terms of Use</a></li>
+                   <li><a href="#">Contract</a></li>
+                </ul>
+            </li>
+        </ul>
+            <div class="b-footer">
+             <p>All rights reserved by ©CompanyName 2022 </p>
+            </div>
+    </footer>
+    <script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+</html>

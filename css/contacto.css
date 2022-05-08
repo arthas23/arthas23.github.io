@@ -1,0 +1,130 @@
+﻿body {
+    background-image: url('../assets/img/fondo.jpg');
+}
+section{
+    display: flex;
+    margin-top: 10rem;
+}
+.contenerdo{
+    max-width:120rem;
+    margin:0 auto 0 auto;
+}
+.nav-bag{
+    background-color: #0097A7;
+    padding:0.4rem;
+}
+.NavegadorPrincipar{
+    display: flex;
+    flex-direction: column;
+
+}
+@media (min-width: 768px){
+    .NavegadorPrincipar{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+}
+.NavegadorPrincipar a{
+    display:block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight:700;
+    padding: 1rem;
+}
+.NavegadorPrincipar a:hover{
+    background-color: darkblue;
+    color: black;
+}
+
+.contact-container{
+    max-width: 960px;
+    margin: auto;
+    margin-top: -80px;
+    margin-block-end: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: #24303c;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+    box-shadow: 10px 20px 40px #000;
+}
+
+.form-container{
+    padding:20px;
+}
+.form-container h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-form{
+    display:grid;
+    row-gap:1rem;
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #2c2f48;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.4rem;
+
+}
+.Secc{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #2c2f48;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.4rem;
+
+}
+.contact-form textarea{
+    resize:none;
+    height:200px;
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background:#000000;
+    font-size:1rem;
+    font-weight:500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact-form .send-button:hover{
+    background:rgba(7, 161, 2, 0.8);
+    transition: 0.3s all linear;
+
+}
+.map iframe{
+    width:100%;
+    height: 100%;
+}
+@media(max-width:964px){
+    .contact-container{
+        margin: 0 auto;
+        width:90%;
+    }
+}
+@media(max-width:700px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 20rem !important;
+    }
+    .map iframe{
+        height: 400px;
+    }
+}
